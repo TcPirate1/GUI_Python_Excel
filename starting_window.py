@@ -1,7 +1,7 @@
 import tkinter as tk
 import tkinter.ttk as ttk
 from CellFormulas import find_cardLocation
-from path import SheetNames
+from path import File, SheetNames
 
 window = tk.Tk() # Window configurations
 window.title("FFTCG card finder")
@@ -19,8 +19,10 @@ def cardSearchCode():
     cardToFind = setCodeAnswer.get()
     print(cardToFind)
     output.delete(0.0, tk.END)
-    for currentSheet in SheetNames:
-        output.insert(tk.END,find_cardLocation(currentSheet, cardToFind))
+    for sheet in SheetNames:
+        currentSheet = File[sheet]
+        print(currentSheet)
+        print(find_cardLocation(currentSheet, cardToFind))
 
 def cardSearchName():
     cardtoFind = setNameAnswer.get()
