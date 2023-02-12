@@ -25,9 +25,7 @@ def cardSearchCode():
         print(find_cardLocation(currentSheet, cardToFind))
 
 def cardSearchName():
-    cardtoFind = setNameAnswer.get()
-    print(cardtoFind)
-    output.delete(0.0, tk.END)
+    pass
         
 # Initialize widgets
 label = tk.Label(window, text= "Welcome to the FFTCG spreadsheet searcher!\n\nNote: This spreadsheet doesn't contain cards from opus 7 or 14 because all of the Commons and Rares were obtained from these sets.\n\nEnter something then click one of the buttons to begin.\n\n")
