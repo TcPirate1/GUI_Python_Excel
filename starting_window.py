@@ -1,7 +1,7 @@
 import tkinter as tk
 import tkinter.ttk as ttk
 from CellFormulas import find_cardLocation
-from path import File, SheetNames
+from path import select_file
 
 window = tk.Tk() # Window configurations
 window.title("FFTCG card finder")
@@ -9,6 +9,8 @@ window.configure(bg='black')
 
 setCodeAnswer = tk.StringVar()
 setNameAnswer = tk.StringVar()
+
+File, SheetNames = select_file()
 
 # Functions
 def clear():
