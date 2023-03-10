@@ -37,9 +37,9 @@ codeInput = tk.Entry(window, width=25, textvariable=setCodeAnswer)
 nameInput = tk.Entry(window, width=25, textvariable=setNameAnswer)
 outputLabel = tk.Label(window, text="The card is at:")
 output = tk.Text(window, width=50, height=35, bg="white", wrap="word")
-cardCodeButton = tk.Button(window, text="Code", command=cardSearchCode)
-cardNameButton = tk.Button(window, text="Card Name", command=cardSearchName)
-ClearButton = tk.Button(window, text="Clear", command=clear)
+cardCodeButton = ttk.Button(window, text="Code", command=cardSearchCode)
+cardNameButton = ttk.Button(window, text="Card Name", command=cardSearchName)
+ClearButton = ttk.Button(window, text="Clear", command=clear)
 
 # Placing widgets on window
 label.grid(row=0,column=1,padx=50 , pady=50)
